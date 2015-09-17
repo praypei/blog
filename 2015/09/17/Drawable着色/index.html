@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | liupei.me</title>
+  <title>Drawable着色 | liupei.me</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Android Develop">
-<meta property="og:type" content="website">
-<meta property="og:title" content="liupei.me">
-<meta property="og:url" content="http://liupei.me/archives/index.html">
+  <meta name="description" content="Drawable着色给任意Drawble着色，增加灵活性，节省资源。Android Lollipop加的新特性，为了支持Material Design的设计。support v4 r22时，添加对应的兼容支持。
+12345public static Drawable setTintDrawable(Drawable d, int color) &amp;#123;    Drawable wrappedD">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Drawable着色">
+<meta property="og:url" content="http://liupei.me/2015/09/17/Drawable着色/index.html">
 <meta property="og:site_name" content="liupei.me">
-<meta property="og:description" content="Android Develop">
+<meta property="og:description" content="Drawable着色给任意Drawble着色，增加灵活性，节省资源。Android Lollipop加的新特性，为了支持Material Design的设计。support v4 r22时，添加对应的兼容支持。
+12345public static Drawable setTintDrawable(Drawable d, int color) &amp;#123;    Drawable wrappedD">
+<meta property="og:updated_time" content="2015-09-17T12:23:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="liupei.me">
-<meta name="twitter:description" content="Android Develop">
+<meta name="twitter:title" content="Drawable着色">
+<meta name="twitter:description" content="Drawable着色给任意Drawble着色，增加灵活性，节省资源。Android Lollipop加的新特性，为了支持Material Design的设计。support v4 r22时，添加对应的兼容支持。
+12345public static Drawable setTintDrawable(Drawable d, int color) &amp;#123;    Drawable wrappedD">
   
     <link rel="alternative" href="/atom.xml" title="liupei.me" type="application/atom+xml">
   
@@ -165,80 +169,103 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Drawable着色" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/09/17/Drawable着色/" class="archive-article-date">
-  	<time datetime="2015-09-17T11:36:02.000Z" itemprop="datePublished">9月 17</time>
+    <div class="article-meta">
+      <a href="/2015/09/17/Drawable着色/" class="article-date">
+  	<time datetime="2015-09-17T11:36:02.000Z" itemprop="datePublished">2015-09-17</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/09/17/Drawable着色/">Drawable着色</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Drawable着色
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Drawable/">Drawable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UI/">UI</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Drawable着色">Drawable着色</h2><h4 id="给任意Drawble着色，增加灵活性，节省资源。">给任意Drawble着色，增加灵活性，节省资源。</h4><p>Android Lollipop加的新特性，为了支持Material Design的设计。support v4 r22时，添加对应的兼容支持。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Drawable <span class="title">setTintDrawable</span><span class="params">(Drawable d, <span class="keyword">int</span> color)</span> </span>&#123;</span><br><span class="line">    Drawable wrappedDrawable = DrawableCompat.wrap(d);</span><br><span class="line">    DrawableCompat.setTint(wrappedDrawable, color);</span><br><span class="line">    <span class="keyword">return</span> wrappedDrawable;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/09/17/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/09/17/hello-world/" class="archive-article-date">
-  	<time datetime="2015-09-17T10:21:17.000Z" itemprop="datePublished">9月 17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/09/17/hello-world/">Hello World</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-    
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Drawable着色" data-title="Drawable着色" data-url="http://liupei.me/2015/09/17/Drawable着色/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"liupei"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -264,8 +291,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
